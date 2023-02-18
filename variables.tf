@@ -1,5 +1,9 @@
 
 variable "host_os" {
   type    = string
-  default = "windows"
+  default = "linux"
+}
+
+variable "aws_regiom" {
+  type = string
 }
