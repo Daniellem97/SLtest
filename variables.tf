@@ -4,6 +4,6 @@ variable "host_os" {
   default = "linux"
 }
 
-variable "aws_regiom" {
+variable "aws_region" {
   type = string
 }
