@@ -19,5 +19,5 @@ module "danielle-dev" {
   host_os           = var.host_os
   node_name         = "danielle"
   key_name          = "danielle_key"
-  instance_type     = "t2.large"
+  instance_type     = "t2.micro"
 }
