@@ -1,3 +1,4 @@
+
 resource "aws_vpc" "mtc_vpc" {
   cidr_block           = "10.123.0.0/16"
   enable_dns_hostnames = true
@@ -34,7 +35,6 @@ resource "aws_route_table" "mtc_public_rt" {
     Name = "dev_public_rt"
   }
 }
-
 resource "aws_route" "default_route" {
   route_table_id         = aws_route_table.mtc_public_rt.id
   destination_cidr_block = "0.0.0.0/0"

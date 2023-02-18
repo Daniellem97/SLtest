@@ -1,7 +1,11 @@
 variable "subnet_id" {
-  type = list(any)
+    type = string
 }
 
 variable "security_group_id" {
-  type = string
+    type = list
+}
+
+variable "host_os" {
+    type = string
 }
